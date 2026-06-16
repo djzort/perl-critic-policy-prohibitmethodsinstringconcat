@@ -137,7 +137,7 @@ However, when the right side of C<.=> itself contains C<.> concatenation
 with method calls, those inner C<.> operators are flagged:
 
     $x .= $obj->method() . $obj->other();   # not ok (inner .)
-    $x .= "Name: " . $obj->method();          # not ok (inner .)
+    $x .= "Name: " . $obj->method();        # not ok (inner .)
 
 =head1 CONFIGURATION
 
