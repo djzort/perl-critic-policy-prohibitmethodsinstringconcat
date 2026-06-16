@@ -1,0 +1,3 @@
+.build/
+Perl-Critic-Policy-*ProhibitMethodsInStringConcat-*/
+*.tar.gz
