@@ -143,6 +143,15 @@ with method calls, those inner C<.> operators are flagged:
 
 This policy does not accept any configuration parameters.
 
+=head1 RELATED POLICIES
+
+L<Perl::Critic::Policy::ControlStructures::ProhibitMultipleSubscripts> follows
+the same principle of extracting intermediate results into named variables
+rather than inlining complex expressions in a loop.  Just as this policy flags
+method calls inside string concatenation (assign to a variable first for
+better diagnostics), C<ProhibitMultipleSubscripts> flags repeated subscript
+lookups in a loop (assign to a variable first for efficiency and clarity).
+
 =head1 SEE ALSO
 
 L<Perl::Critic>, L<perldiag/"Use of uninitialized value %s">
